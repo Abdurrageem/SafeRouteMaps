@@ -1,43 +1,83 @@
-# Google Maps Real-time Dashboard
+# SafeRouteMaps - Cape Town Crime Heatmap Dashboard
 
-A TypeScript dashboard that integrates with Google Maps to display heatmaps and route optimization based on real-time location data. The dashboard communicates with mobile apps (built using .NET MAUI) via SignalR/WebSocket for real-time updates.
+A TypeScript dashboard that integrates with Google Maps to display crime heatmaps and route optimization for Cape Town, South Africa. The dashboard visualizes crime statistics from SAPS (South African Police Service) data with multi-layer risk visualization.
+
+## 🌐 Live Demo
+
+**[View Live Dashboard](https://safe-route-maps-1wdl76i14-abdur-rageems-projects.vercel.app/)**
 
 ## Features
 
-- 🗺️ **Interactive Google Map** - Dark theme with full map controls
-- 🔥 **Real-time Heatmaps** - Visualize location density with customizable heatmaps
-- 🛣️ **Route Optimization** - Calculate optimal routes between device locations
+- 🗺️ **Interactive Google Map** - Light theme centered on Cape Town
+- 🔥 **Multi-Layer Crime Heatmaps** - 4 separate layers for High, Medium, Low, and Very Low risk areas
+- 🎯 **Risk Zone Circles** - Visual outlines around each crime hotspot
+- 📍 **Interactive Markers** - Click hotspots to view detailed crime statistics
+- 🛣️ **Route Optimization** - Calculate optimal safe routes
 - 📡 **Real-time Updates** - SignalR/WebSocket integration for live location tracking
-- 💾 **SQLite Database** - Persistent storage for location history
 - 📊 **Live Statistics** - Active devices, data points, and route distances
+
+## Crime Data
+
+The dashboard displays crime statistics from 24 Cape Town areas:
+- **12 High-Risk Areas**: Mfuleni, Nyanga, Delft, Khayelitsha, etc.
+- **12 Extended Areas**: Medium, Low, and Very Low risk zones
+
+Data source: SAPS Q1 2024/25 Crime Statistics
 
 ## Project Structure
 
 ```
-GoogleMaps/
+SafeRouteMaps/
+├── api/                       # Vercel Serverless Functions
+│   ├── config.ts              # API config endpoint
+│   ├── health.ts              # Health check endpoint
+│   └── crime/
+│       ├── hotspots.ts        # Crime hotspots endpoint
+│       └── heatmap/
+│           └── by-risk.ts     # Heatmap data by risk level
 ├── public/
-│   └── index.html           # Dashboard HTML entry point
+│   └── index.html             # Dashboard HTML entry point
 ├── src/
 │   ├── components/
-│   │   ├── MapManager.ts    # Google Maps initialization and management
+│   │   ├── MapManager.ts      # Google Maps initialization
 │   │   ├── HeatmapRenderer.ts # Heatmap layer management
-│   │   └── RouteOptimizer.ts  # Route calculation and optimization
+│   │   └── RouteOptimizer.ts  # Route calculation
 │   ├── services/
-│   │   ├── SignalRService.ts  # Real-time communication client
+│   │   ├── SignalRService.ts  # Real-time communication
 │   │   └── ApiService.ts      # HTTP API client
 │   ├── types/
-│   │   └── index.ts           # TypeScript type definitions
-│   └── index.ts               # Main dashboard entry point
-├── server/
-│   ├── index.ts               # Express server with API routes
+│   │   └── index.ts           # TypeScript definitions
+│   └── index.ts               # Main dashboard entry
+├── server/                    # Local development server
+│   ├── index.ts               # Express server
 │   ├── database.ts            # SQLite database service
-│   ├── signalr-hub.ts         # WebSocket hub for real-time updates
-│   └── init-db.ts             # Database initialization script
+│   ├── crime-data.ts          # Crime data service
+│   └── signalr-hub.ts         # WebSocket hub
+├── data/
+│   ├── cape-town-crime-stats.json      # Primary crime data
+│   └── cape-town-extended-areas.json   # Extended area data
+├── vercel.json                # Vercel deployment config
 ├── package.json
 ├── tsconfig.json
-├── webpack.config.js
-└── .env.example
+└── webpack.config.js
 ```
+
+## Deployment
+
+### Vercel (Production)
+
+The app is deployed on Vercel with serverless API functions.
+
+**Live URL**: [https://safe-route-maps-1wdl76i14-abdur-rageems-projects.vercel.app/](https://safe-route-maps-1wdl76i14-abdur-rageems-projects.vercel.app/)
+
+#### Deploy Your Own
+
+1. Fork/clone this repository
+2. Import to [Vercel](https://vercel.com)
+3. Add environment variable: `GOOGLE_MAPS_API_KEY`
+4. Deploy
+
+### Local Development
 
 ## Prerequisites
 
@@ -200,9 +240,27 @@ npm start
 
 - **Frontend**: TypeScript, Google Maps JavaScript API, Webpack
 - **Backend**: Node.js, Express, TypeScript
-- **Database**: SQLite (better-sqlite3)
+- **Deployment**: Vercel (Serverless Functions)
+- **Database**: SQLite (sql.js - pure JavaScript)
 - **Real-time**: WebSocket (ws)
 - **Client SignalR**: @microsoft/signalr
+
+## API Endpoints (Vercel)
+
+| Endpoint | Description |
+|----------|-------------|
+| `/api/health` | Health check |
+| `/api/config` | Client configuration (API key) |
+| `/api/crime/hotspots` | All crime hotspots with statistics |
+| `/api/crime/heatmap/by-risk` | Heatmap points grouped by risk level |
+
+## Screenshots
+
+The dashboard displays:
+- **Red Zones**: High-risk crime areas (Mfuleni, Nyanga, Khayelitsha, etc.)
+- **Yellow Zones**: Medium-risk areas (Claremont, Wynberg, Sea Point, etc.)
+- **Light Green Zones**: Low-risk areas (Pinelands, Durbanville, Fish Hoek, etc.)
+- **Green Zones**: Very low-risk areas (Llandudno, Noordhoek, Kommetjie)
 
 ## License
 
