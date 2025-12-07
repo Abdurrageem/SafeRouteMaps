@@ -1,12 +1,6 @@
-// @ts-ignore - sql.js doesn't have type declarations
-import initSqlJs from 'sql.js';
+import initSqlJs, { Database } from 'sql.js';
 import path from 'path';
 import fs from 'fs';
-
-// Type for sql.js database
-type SqlJsDatabase = any;
-// Type for sql.js result row
-type SqlRow = (string | number | null)[];
 
 export interface LocationRow {
   id: string;
@@ -25,7 +19,7 @@ export interface LocationRow {
  * Uses sql.js (pure JavaScript SQLite implementation)
  */
 export class DatabaseService {
-  private db: SqlJsDatabase | null = null;
+  private db: Database | null = null;
   private dbPath: string;
   private initialized: boolean = false;
   private initPromise: Promise<void> | null = null;
@@ -305,7 +299,7 @@ export class DatabaseService {
     const result = this.db.exec(`SELECT DISTINCT device_id FROM locations`);
     if (result.length === 0) return [];
 
-    return result[0].values.map((row: SqlRow) => row[0] as string);
+    return result[0].values.map((row) => row[0] as string);
   }
 
   /**

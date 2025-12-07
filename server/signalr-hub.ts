@@ -1,5 +1,5 @@
 import { Server as HttpServer } from 'http';
-import { DatabaseService } from './database';
+import { DatabaseService, LocationRow } from './database';
 
 // Note: For a production SignalR implementation with .NET MAUI clients,
 // you would typically use a .NET backend with proper SignalR Hub.
@@ -147,7 +147,7 @@ function handleClientMessage(
 
       sendToClient(client.socket, {
         type: 'ReceiveLocations',
-        locations: locations.map((loc) => ({
+        locations: locations.map((loc: LocationRow) => ({
           id: loc.id,
           deviceId: loc.device_id,
           latitude: loc.latitude,
