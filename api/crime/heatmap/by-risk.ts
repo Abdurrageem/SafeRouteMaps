@@ -117,5 +117,5 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     result[riskLevel].push(...points);
   }
 
-  res.status(200).json(result);
+  res.status(200).json({ success: true, data: result });
 }
