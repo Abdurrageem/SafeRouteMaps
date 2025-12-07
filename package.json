@@ -30,6 +30,7 @@
     "@types/sql.js": "^1.4.9",
     "@types/uuid": "^9.0.7",
     "@types/ws": "^8.5.10",
+    "@vercel/node": "^5.5.15",
     "concurrently": "^8.2.2",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.4",
