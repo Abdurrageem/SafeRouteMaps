@@ -1,0 +1,181 @@
+{
+  "city": "Cape Town",
+  "province": "Western Cape",
+  "risk_extension": "Medium, Low, and Very Low vehicle-crime areas for extended heatmap modeling",
+  "last_updated": "2024-Q1",
+  "areas": [
+    {
+      "area": "Claremont",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9804, "lng": 18.4657 },
+      "stats": {
+        "contact_crime_total": 145,
+        "carjacking": 4,
+        "theft_motor_vehicle": 18,
+        "theft_from_motor_vehicle": 22
+      },
+      "risk_category": "Medium",
+      "safety_score": 62
+    },
+    {
+      "area": "Wynberg",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0039, "lng": 18.4656 },
+      "stats": {
+        "contact_crime_total": 198,
+        "carjacking": 5,
+        "theft_motor_vehicle": 21,
+        "theft_from_motor_vehicle": 27
+      },
+      "risk_category": "Medium",
+      "safety_score": 58
+    },
+    {
+      "area": "Milnerton",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.8668, "lng": 18.5112 },
+      "stats": {
+        "contact_crime_total": 167,
+        "carjacking": 3,
+        "theft_motor_vehicle": 12,
+        "theft_from_motor_vehicle": 19
+      },
+      "risk_category": "Medium",
+      "safety_score": 64
+    },
+    {
+      "area": "Sea Point",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9180, "lng": 18.3879 },
+      "stats": {
+        "contact_crime_total": 121,
+        "carjacking": 2,
+        "theft_motor_vehicle": 8,
+        "theft_from_motor_vehicle": 14
+      },
+      "risk_category": "Medium",
+      "safety_score": 68
+    },
+    {
+      "area": "Rondebosch",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9581, "lng": 18.4760 },
+      "stats": {
+        "contact_crime_total": 113,
+        "carjacking": 1,
+        "theft_motor_vehicle": 7,
+        "theft_from_motor_vehicle": 13
+      },
+      "risk_category": "Medium",
+      "safety_score": 71
+    },
+    {
+      "area": "Pinelands",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9355, "lng": 18.5135 },
+      "stats": {
+        "contact_crime_total": 69,
+        "carjacking": 0,
+        "theft_motor_vehicle": 3,
+        "theft_from_motor_vehicle": 6
+      },
+      "risk_category": "Low",
+      "safety_score": 82
+    },
+    {
+      "area": "Durbanville",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.8383, "lng": 18.6470 },
+      "stats": {
+        "contact_crime_total": 58,
+        "carjacking": 0,
+        "theft_motor_vehicle": 2,
+        "theft_from_motor_vehicle": 3
+      },
+      "risk_category": "Low",
+      "safety_score": 85
+    },
+    {
+      "area": "Fish Hoek",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.1375, "lng": 18.4274 },
+      "stats": {
+        "contact_crime_total": 44,
+        "carjacking": 0,
+        "theft_motor_vehicle": 1,
+        "theft_from_motor_vehicle": 2
+      },
+      "risk_category": "Low",
+      "safety_score": 88
+    },
+    {
+      "area": "Simon's Town",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.1950, "lng": 18.4350 },
+      "stats": {
+        "contact_crime_total": 38,
+        "carjacking": 0,
+        "theft_motor_vehicle": 1,
+        "theft_from_motor_vehicle": 1
+      },
+      "risk_category": "Low",
+      "safety_score": 90
+    },
+    {
+      "area": "Llandudno",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0110, "lng": 18.3534 },
+      "stats": {
+        "contact_crime_total": 6,
+        "carjacking": 0,
+        "theft_motor_vehicle": 0,
+        "theft_from_motor_vehicle": 1
+      },
+      "risk_category": "Very Low",
+      "safety_score": 96
+    },
+    {
+      "area": "Noordhoek",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0950, "lng": 18.3737 },
+      "stats": {
+        "contact_crime_total": 12,
+        "carjacking": 0,
+        "theft_motor_vehicle": 0,
+        "theft_from_motor_vehicle": 1
+      },
+      "risk_category": "Very Low",
+      "safety_score": 94
+    },
+    {
+      "area": "Kommetjie",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.1389, "lng": 18.3298 },
+      "stats": {
+        "contact_crime_total": 9,
+        "carjacking": 0,
+        "theft_motor_vehicle": 0,
+        "theft_from_motor_vehicle": 0
+      },
+      "risk_category": "Very Low",
+      "safety_score": 95
+    }
+  ],
+  "metadata": {
+    "data_type": "extended_risk_areas",
+    "categories": ["Medium", "Low", "Very Low"],
+    "compatible_with": "cape-town-crime-stats.json"
+  }
+}

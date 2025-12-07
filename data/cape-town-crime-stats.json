@@ -1,0 +1,181 @@
+{
+  "city": "Cape Town",
+  "province": "Western Cape",
+  "generated_from": "crimestats.pdf (SAPS Q1 2024/25) - station-level & top-30 lists where available",
+  "last_updated": "2024-Q1",
+  "hotspots": [
+    {
+      "area": "Mfuleni",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0053, "lng": 18.6981 },
+      "stats": {
+        "contact_crime_total": 1013,
+        "carjacking": null,
+        "theft_motor_vehicle": 21,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 95,
+      "source_note": "Contact-crime top-30 station entry from SAPS PDF (Mfuleni = 1,013)"
+    },
+    {
+      "area": "Nyanga",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9873, "lng": 18.5756 },
+      "stats": {
+        "contact_crime_total": 979,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": 21
+      },
+      "risk_score": 92,
+      "source_note": "Contact-crime top-30 station entry from SAPS PDF (Nyanga = 979)"
+    },
+    {
+      "area": "Delft",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9631, "lng": 18.6378 },
+      "stats": {
+        "contact_crime_total": 833,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 85,
+      "source_note": "Contact-crime top-30 station entry from SAPS PDF (Delft = 833)"
+    },
+    {
+      "area": "Kraaifontein",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.8511, "lng": 18.7281 },
+      "stats": {
+        "contact_crime_total": 818,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 83,
+      "source_note": "Contact-crime top-30 station entry from SAPS PDF (Kraaifontein = 818)"
+    },
+    {
+      "area": "Bellville",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9017, "lng": 18.6270 },
+      "stats": {
+        "contact_crime_total": 290,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 55,
+      "source_note": "Top-30 station entry showing Bellville = 290"
+    },
+    {
+      "area": "Table View",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.8225, "lng": 18.4875 },
+      "stats": {
+        "contact_crime_total": 267,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 50,
+      "source_note": "Top-30 station entry showing Table View = 267"
+    },
+    {
+      "area": "Gugulethu",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9792, "lng": 18.5678 },
+      "stats": {
+        "contact_crime_total": 43,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 45,
+      "source_note": "Gugulethu appears in the PDF's top-30 lists"
+    },
+    {
+      "area": "Manenberg",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -33.9742, "lng": 18.5411 },
+      "stats": {
+        "contact_crime_total": 24,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 40,
+      "source_note": "Manenberg appears in a top-30 table with a listed count (24)"
+    },
+    {
+      "area": "Harare",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0311, "lng": 18.6375 },
+      "stats": {
+        "contact_crime_total": 21,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 38,
+      "source_note": "Harare appears in the 'top 30' pages in the PDF (count = 21)"
+    },
+    {
+      "area": "Philippi East",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0167, "lng": 18.5833 },
+      "stats": {
+        "contact_crime_total": null,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 35,
+      "source_note": "Philippi East is referenced among Cape Town-area stations"
+    },
+    {
+      "area": "Khayelitsha",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0333, "lng": 18.6667 },
+      "stats": {
+        "contact_crime_total": null,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 90,
+      "source_note": "Known high-crime area - awaiting detailed stats"
+    },
+    {
+      "area": "Mitchells Plain",
+      "district": "City of Cape Town",
+      "province": "Western Cape",
+      "coordinates": { "lat": -34.0500, "lng": 18.6167 },
+      "stats": {
+        "contact_crime_total": null,
+        "carjacking": null,
+        "theft_motor_vehicle": null,
+        "theft_from_motor_vehicle": null
+      },
+      "risk_score": 75,
+      "source_note": "Known high-crime area - awaiting detailed stats"
+    }
+  ],
+  "metadata": {
+    "pdf_source": "crimestats.pdf (SAPS Q1 2024/25)",
+    "coordinate_source": "Geocoded from area names",
+    "risk_score_methodology": "Based on contact_crime_total normalized to 0-100 scale, with known high-crime areas estimated"
+  }
+}
